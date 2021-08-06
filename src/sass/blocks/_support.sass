@@ -1,0 +1,82 @@
+.section-support
+  padding-top: 110px
+  padding-bottom: 110px
+.support
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  &-title
+    max-width: 403px
+    margin-bottom: 85px
+  &-img
+    margin-left: -30px
+  &-part
+    display: flex
+    align-items: flex-end
+    margin-bottom: 35px
+    &:last-child
+      margin-bottom: 0
+  &-number
+    font-family: "Manrope", sans-serif
+    font-style: normal
+    font-weight: bold
+    font-size: 150px
+    text-align: center
+    letter-spacing: 0.2px
+    margin-right: 24px
+    &__one
+      color: #009FE3
+      margin-right: 35px
+    &__two
+      color: #6DB6D5
+
+    &__three
+      color: #ACCAD7
+  &-main
+    max-width: 390px
+    margin-bottom: 23px
+  &-subtitle
+    font-family: "Manrope", sans-serif
+    font-style: normal
+    font-weight: bold
+    font-size: 20px
+    line-height: 25px
+    letter-spacing: 0.2px
+    color: #000000
+    &__border
+      text-decoration-line: underline
+      text-decoration-skip-ink: none
+  &-text
+    font-family: "Montserrat", sans-serif
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 22px
+    letter-spacing: 0.3px
+    color: #737B7D
+    margin-top: 10px
+    max-width: 342px
+  &-info
+    margin-top: -20px
+
+@media (max-width: 1000px)
+  .section-support
+    padding-top: 50px
+    padding-bottom: 50px
+  .support
+    flex-direction: column
+    &-title
+      margin-bottom: 20px
+    &-part
+      margin-bottom: 40px
+    &-comp
+      margin-bottom: 30px
+    &-info
+      margin-top: 0
+    &-number
+      margin-right: 20px
+
+@media (max-width: 500px)
+  .support
+    &-number
+      font-size: 130px

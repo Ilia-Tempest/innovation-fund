@@ -1,0 +1,146 @@
+details
+  display: block
+  margin-bottom: .5rem
+summary::-webkit-details-marker
+  display: none
+summary::-moz-list-bullet
+  list-style-type: none
+summary::marker
+  display: none
+summary
+  padding: .3em .5em .3em .4em
+  display: inline-block
+  font-size: 1.4em
+  cursor: pointer
+summary ~ *
+
+summary:focus
+  outline: 0
+  box-shadow: inset 0 0 1px rgba(0,0,0,0.3), inset 0 0 2px rgba(0,0,0,0.3)
+
+.section-route
+  padding-top: 100px
+  padding-bottom: 110px
+.route
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  &-item
+    background: #009FE3
+    display: flex
+    align-items: center
+    justify-content: space-between
+    width: 575px
+    padding: 11px 30px
+    &-1
+      background: #009FE3
+      display: flex
+      align-items: center
+      justify-content: space-between
+      width: 575px
+      padding: 11px 30px
+      margin-top: 45px
+  &-part
+    padding-top: 24px
+    padding-bottom: 24px
+    padding-left: 65px
+    border: 1px solid #000000
+    background: #009FE3
+  &-int
+    display: flex
+    align-items: center
+  &-text
+    font-family: "Manrope", sans-serif
+    font-style: normal
+    font-weight: 800
+    font-size: 20px
+    line-height: 27px
+    letter-spacing: 0.2px
+    color: #FFFFFF
+    margin-left: 35px
+
+  &-plus
+    height: 3px
+    background: #FFFFFF
+    width: 20px
+    position: relative
+  &-min
+    width: 20px
+    height: 3px
+    background: #FFFFFF
+    position: absolute
+    transform: rotate(90deg)
+    &-1
+      width: 20px
+      height: 3px
+      background: #FFFFFF
+      position: absolute
+      transform: rotate(90deg)
+  &-line
+    transform: rotate(180deg)
+    transition: 0.3s all
+  &-title
+    max-width: 213px
+    font-family: "Manrope", sans-serif
+    font-style: normal
+    font-weight: bold
+    font-size: 30px
+    line-height: 41px
+    letter-spacing: 0.2px
+    color: #000000
+    margin-bottom: 20px
+  &-subtitle
+    font-family: "Montserrat", sans-serif
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 22px
+    letter-spacing: 0.3px
+    color: #737B7D
+    max-width: 257px
+  &-a
+    font-family: "Manrope", sans-serif
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 22px
+    letter-spacing: 0.2px
+    color: #000000
+  &-ul
+    padding-left: 65px
+    padding-top: 24px
+    padding-bottom: 24px
+    border: 1px solid #000000
+    border-top: 0
+
+@media (max-width: 1200px)
+  .route
+    flex-direction: column
+    &-burger
+      margin-top: 30px
+    &-item
+      &-1
+        margin-top: 20px
+
+@media (max-width: 1000px)
+  .section-route
+    padding-top: 50px
+    padding-bottom: 50px
+
+@media (max-width: 768px)
+  .route
+    &-burger
+      width: 100%
+    &-item
+      width: auto
+      &-1
+        width: auto
+
+@media (max-width: 500px)
+  .route
+    &-text
+      margin-left: 20px
+    &-item
+      padding: 11px 20px
+      &-1
+        padding: 11px 20px

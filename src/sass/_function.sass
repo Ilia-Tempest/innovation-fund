@@ -1,0 +1,44 @@
+body
+  box-sizing: border-box
+img
+  text-decoration: none
+  max-width: 100%
+a
+  text-decoration: none
+  cursor: pointer
+input
+  outline: none
+button
+  outline: none
+  border: 0
+  background: none
+  cursor: pointer
+p,h1, h2, h3
+  margin: 0
+ul
+  margin: 0
+.title
+  font-family: "Manrope", sans-serif
+  font-style: normal
+  font-weight: 800
+  font-size: 30px
+  line-height: 41px
+  letter-spacing: 0.2px
+  color: #000000
+.container
+  max-width: 1120px
+  margin: auto
+  &-about
+    max-width: 665px
+    margin: auto
+@media (max-width: 1300px)
+  .container
+    max-width: 80%
+    &-about
+      max-width: 80%
+@media (max-width: 768px)
+  .container
+    max-width: 90%
+    &-about
+      max-width: 90%
+      margin: auto

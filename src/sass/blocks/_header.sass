@@ -1,0 +1,162 @@
+.header
+    padding-top: 30px
+    background: #F6F6F6
+    padding-bottom: 108px
+    background-image: url(../img/header/background.png)
+    background-repeat: no-repeat
+    background-position-x: right
+    background-position-y: bottom
+    background-size: contain
+    &-main
+        display: flex
+        justify-content: space-between
+        align-items: center
+        width: 100%
+    &-content
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        &__text
+            font-family: "Montserrat", sans-serif
+            font-style: normal
+            font-weight: 500
+            font-size: 14px
+            line-height: 18px
+            color: #373F41
+    &-social
+        display: flex
+        align-items: center
+    &-inst
+        margin-right: 13px
+    &-phone
+        margin-right: 25px
+    &-info
+        display: flex
+        align-items: center
+        justify-content: space-between
+        margin-bottom: 13px
+        width: 100%
+    &-link
+        margin-left: 40px
+    &-input
+        width: 300px
+        height: 27px
+        background-image: url(../img/header/search.svg)
+        background-repeat: no-repeat
+        background-position-y: center
+        background-position-x: 8px
+        border: 0.6px solid #000000
+        &:focus
+            background-image: none
+    &-block
+        display: flex
+        justify-content: space-between
+        align-items: center
+        flex-wrap: wrap
+    &-logo
+        color: #121212
+        font-family: "Proxima Nova Bold", sans-serif
+        font-size: 25px
+        font-weight: 700
+        font-style: normal
+    &-menu
+        background: #FFFFFF
+        padding: 11px
+        display: flex
+        align-items: center
+        &__button
+            display: none
+        &__a
+            color: #373F41
+            font-family: "Montserrat", sans-serif
+            font-style: normal
+            font-weight: 500
+            font-size: 14px
+            line-height: 18px
+            padding: 12px 15px
+            &:last-child
+                margin-right: 0px
+            &:hover
+                border-top: 5px solid #009FE3
+                transition: 0.1s all
+
+@media (max-width: 1300px)
+    .header
+        background-size: cover
+        &-menu
+            padding: 16px
+            flex-direction: column-reverse
+
+        &-input
+            margin-top: 15px
+        &-link
+            margin-left: 0px
+
+@media (max-width: 1000px)
+    .header
+        background-image: none
+        &-input
+            width: auto
+        &-block
+            align-items: flex-start
+        &-main
+            flex-direction: column
+            width: auto
+            align-items: flex-start
+        &-info
+            margin-top: 15px
+            margin-bottom: 0px
+            flex-wrap: wrap
+        &-gmail
+            margin-right: 25px
+
+        &-content
+            &__text
+                margin-top: 3px
+        &-link
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            position: absolute
+            top: 110px
+        &-logo
+            margin-right: 0px
+        &-menu
+            position: absolute
+            transform: translateX(-1000%)
+            transition: 0.5s all
+            background-color: #009FE3
+            &__button
+                padding: 20px 30px
+                border-radius: 29px
+                border: 2px solid #ffffff
+                margin-top: 28px
+                display: flex
+                align-items: center
+                &-text
+                    color: #ffffff
+                    font-family: "Proxima Nova Regular"
+                    font-size: 15px
+                    font-weight: 400
+                    margin-left: 10px
+            &__a
+                margin-right: 0px
+                color: #ffffff
+                font-size: 17px
+                margin-top: 22px
+                &:hover
+                    border: 0
+                    color: white
+                    font-weight: 400
+
+                &:first-child
+                    margin-top: 0px
+        &-button
+            display: none
+
+@media (max-width: 768px)
+    .header
+        padding-bottom: 60px
+        &-block
+            position: relative

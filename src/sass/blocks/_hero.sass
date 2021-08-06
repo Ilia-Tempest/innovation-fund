@@ -1,0 +1,58 @@
+.section-hero
+    margin-bottom: 30px
+
+.hero
+    &-content
+        margin-top: 104px
+        display: flex
+        flex-direction: column
+        position: relative
+        align-items: flex-start
+    &-title
+        color: #000000
+        font-family: "Manrope", sans-serif
+        font-style: normal
+        font-weight: 800
+        font-size: 48px
+        line-height: 50px
+        letter-spacing: 0.2px
+    &-text
+        font-family: "Montserrat", sans-serif
+        font-style: normal
+        font-weight: normal
+        font-size: 16px
+        line-height: 25px
+        letter-spacing: 0.3px
+        color: #737B7D
+        max-width: 350px
+        margin-top: 20px
+        margin-bottom: 40px
+    &-button
+        display: flex
+        align-items: center
+        padding: 12px 18px
+        background: #009FE3
+        box-shadow: 0px 0px 20px rgba(0, 159, 227, 0.3)
+        &__text
+            font-family: "Montserrat", sans-serif
+            font-style: normal
+            font-weight: 600
+            font-size: 14px
+            line-height: 17px
+            color: #FFFFFF
+
+@media (max-width: 768px)
+    .hero
+        &-content
+            margin-top: 60px
+        &-title
+            font-size: 25px
+            line-height: 32px
+        &-text
+            font-size: 17px
+            line-height: 25px
+
+@media (max-width: 370px)
+    .hero
+        &-title
+            font-size: 20px

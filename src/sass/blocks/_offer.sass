@@ -1,0 +1,67 @@
+.offer
+  background: url(../img/about/info.jpg) no-repeat
+  background-position: center right
+  background-size: contain
+  position: relative
+  padding-top: 85px
+  padding-bottom: 85px
+  &:before
+    content: ''
+    width: 70%
+    height: 100%
+    position: absolute
+    top: 0
+    left: 0
+    background-image: url(../img/about/background.jpg)
+    background-position: left
+    background-size: cover
+    background-repeat: no-repeat
+  &-footer
+    display: flex
+    justify-content: space-between
+  &-block
+    width: 60%
+    padding-right: 90px
+    position: relative
+  &__title
+    max-width: 360px
+    margin-bottom: 24px
+    line-height: 35px
+    text-align: left
+  &__subtitle
+    display: block
+    max-width: 240px
+    margin-bottom: 30px
+  &__input
+    width: 240px
+    padding: 20px 26px
+    margin-bottom: 30px
+    &:first-child
+      margin-right: 10px
+  &__button
+    width: 100%
+    margin: 0
+    min-height: 70px
+    margin-bottom: 30px
+
+@media (max-width: 1600px)
+  .offer
+
+    &:before
+      content: ''
+      width: 65%
+
+@media (max-width: 1000px)
+  .offer
+    padding-top: 50px
+    padding-bottom: 50px
+    &:before
+      width: 100%
+    &-footer
+      display: flex
+      flex-direction: column
+      &__subtitle
+        margin-top: 18px
+    &-block
+      width: 100%
+      padding-right: 0

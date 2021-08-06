@@ -1,0 +1,128 @@
+.section-contest
+  background: #F6F6F6
+  padding-top: 85px
+  padding-bottom: 85px
+.contest
+  &-img
+    margin-right: 20px
+  &-title
+    display: flex
+    align-items: center
+  &-block
+    margin-top: 26px
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    flex-wrap: wrap
+  &-part
+    display: flex
+    align-items: center
+    max-width: 540px
+    margin-top: 24px
+  &-info
+    padding: 15px 33px 15px 25px
+    background: #FFFFFF
+    height: 110px
+    display: flex
+    justify-content: space-between
+    flex-direction: column
+  &-text
+    font-family: "Manrope", sans-serif
+    font-style: normal
+    font-weight: bold
+    font-size: 14px
+    line-height: 19px
+    letter-spacing: 0.2px
+    color: #000000
+    width: 445px
+  &-date
+    font-family: "Montserrat", sans-serif
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 22px
+    letter-spacing: 0.3px
+    color: #737B7D
+  &-status
+    font-family: "Manrope", sans-serif
+    font-style: normal
+    font-weight: bold
+    font-size: 20px
+    line-height: 27px
+    letter-spacing: 0.2px
+    color: #FFFFFF
+    background: #009FE3
+    transform: rotate(-180deg)
+    writing-mode: tb-rl
+    padding-left: 4px
+    padding-right: 6px
+    padding-top: 15px
+    height: 125px
+    &__grey
+      background: #B5B5B5
+  &-a
+    margin-left: 25px
+    font-family: "Montserrat", sans-serif
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 22px
+    letter-spacing: 0.3px
+    color: #009FE3
+  &-button
+    display: block
+    text-align: right
+    margin-top: 40px
+    font-family: "Montserrat", sans-serif
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 22px
+    text-align: right
+    letter-spacing: 0.3px
+    text-decoration-line: underline
+    text-decoration-skip-ink: none
+    color: #000000
+
+@media (max-width: 1300px)
+  .contest
+    &-button
+      text-align: left
+
+@media (max-width: 1000px)
+  .section-contest
+    padding-top: 50px
+    padding-bottom: 50px
+  .contest
+    &-button
+      margin-top: 30px
+
+@media (max-width: 640px)
+  .contest
+    &-info
+      height: auto
+    &-text
+      width: auto
+      margin-bottom: 12px
+    &-part
+      flex-direction: column
+    &-status
+      transform: rotate(0deg)
+      writing-mode: inherit
+      height: auto
+      padding-left: 0px
+      padding-right: 0px
+      padding-top: 4px
+      padding-bottom: 6px
+      width: 100%
+      & span
+        padding-left: 25px
+
+@media (max-width: 360px)
+  .contest
+    &-bottom
+      display: flex
+      flex-direction: column
+    &-a
+      margin-left: 0
+      margin-top: 5px
